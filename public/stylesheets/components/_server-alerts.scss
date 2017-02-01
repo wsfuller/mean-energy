@@ -1,0 +1,35 @@
+//
+// COMPONENTS - SERVER-ALERTS
+//__________________________________________________
+.server-alert{
+  width: 100%;
+  height: auto;
+  margin: .25rem auto;
+  padding: 1rem;
+  &.warning{
+    color: white;
+    background-color: red;
+  }
+}
+
+ul.success, ul.error{
+  margin: .25rem auto 1rem;
+  padding: 0;
+  list-style: none;
+  li{
+    margin: 0 auto 20px;
+    padding: 15px;
+    color: rgba(255,255,255, 0.84);
+  }
+}
+
+ul.success {
+  li {
+    background-color: #4caf50;
+  }
+}
+ul.error{
+  li{
+    background-color: #f44336;
+  }
+}
