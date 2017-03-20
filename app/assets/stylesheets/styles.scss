@@ -43,7 +43,7 @@ a{
 // ELEMENTS
 // Styles effecting tags only: <h#>, <p>, <body>, etc.
 //__________________________________________________
-//@import "elements/page";
+@import "elements/page";
 //@import "elements/font-sizes";
 //@import "elements/links";
 //@import "elements/lists";
@@ -69,9 +69,9 @@ a{
 // COMPONENTS
 // Recognizable pieces of UI: cards, headers, side panels, etc.
 //__________________________________________________
-//@import "components/header";
-@import "components/_site-navbar.scss";
-@import "components/_server-alerts.scss";
+@import "components/header";
+//@import "components/_site-navbar.scss";
+//@import "components/_server-alerts.scss";
 //@import "components/footer";
 //@import "components/modules";
 //@import "components/home-module";
