@@ -29,27 +29,27 @@ gulp.task('vendor-scripts', function(){
     'bower_components/angular-retina/build/angular-retina.min.js',
   ])
     .pipe(concat('vendor-scripts.min.js'))
-    .pipe(gulp.dest('public/javascripts/build/'));
+    .pipe(gulp.dest('dist/javascripts/build/'));
 });
 
 gulp.task('scripts', function(){
-  return gulp.src(['public/javascripts/development/**/*.js'])
+  return gulp.src(['dist/javascripts/development/**/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('scripts.min.js'))
     .pipe(uglify({mangle: false}))
-    .pipe(gulp.dest('public/javascripts/build/'))
+    .pipe(gulp.dest('dist/javascripts/build/'))
     .pipe(livereload());
 });
 
 gulp.task('styles', function(){
-  return gulp.src('public/stylesheets/**/*.scss')
+  return gulp.src('dist/stylesheets/**/*.scss')
     .pipe(sass({style: 'expanded'}))
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(gulp.dest('public/stylesheets/build/'))
+    .pipe(gulp.dest('dist/stylesheets/build/'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
-    .pipe(gulp.dest('public/stylesheets/build/'))
+    .pipe(gulp.dest('dist/stylesheets/build/'))
     .pipe(livereload());
 });
 
@@ -59,11 +59,18 @@ gulp.task('views', function(){
 });
 
 
-gulp.task('watch',function(){
+gulp.task('default',function(){
   livereload.listen();
   gulp.watch('views/**/*{.pug, .jade}', ['views']);
-  gulp.watch('public/stylesheets/**/*.scss', ['styles']);
-  gulp.watch('public/javascripts//development/**/*.js', ['scripts']);
+  gulp.watch('dist/stylesheets/**/*.scss', ['styles']);
+  gulp.watch('dist/javascripts/development/**/*.js', ['scripts']);
   //gulp.watch('src/assets/javascripts/**/*.json', ['json']);
   //gulp.watch('src/assets/images/**/*', ['images']);
+});
+
+gulp.task('build', function(){
+  gulp.start(
+    'vendor-scripts',
+    'scripts'
+  );
 });

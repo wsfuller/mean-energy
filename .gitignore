@@ -49,6 +49,5 @@ Temporary Items
 /node_modules
 /design
 .DS_Store
-/public/javascripts/build
-/public/stylesheets/build
+/dist
 /bin

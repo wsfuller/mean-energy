@@ -26,7 +26,8 @@
     "gulp-jshint": "^2.0.4",
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.0.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4"
   },
   "dependencies": {
     "bcrypt": "^1.0.2",
