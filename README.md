@@ -9,7 +9,6 @@ This application is for educational purposes only.
 * ExpressJS
 * AngularJS
 * NodeJS
-* PUG
 * Bower
 * Gulp
 
@@ -19,6 +18,21 @@ This application is for educational purposes only.
 * Monster Energy
 * Rockstar
 * Red Bull
+   * Original
+   * Sugarfree
+   * Total Zero
+   * Red Edition
+   * Blue Edition
+   * Yellow Edition
+   * Orange Edition
+   * Lime Edition
+   * Silver Edition
+   * Pink Edition
+   * Kiwi Edition
+   * F1 Edition
+   * Orange Edition Zero
+   * Cherry Edition Zero
+
 
 
 
