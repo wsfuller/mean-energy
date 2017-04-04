@@ -1,0 +1,29 @@
+//
+// SETTINGS - TYPOGRAPHY
+//__________________________________________________
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+$primary-font-family: "Roboto", sans-serif !default;
+
+$line-height-base: 1.4;
+$font-size-base: 16px;
+
+$font-weight-thin:   100;
+$font-weight-light:  200;
+$font-weight-base:   400;
+$font-weight-bold:   700;
+
+$h1-font-size: 11.25rem; //60/16
+$h2-font-size: 5.625rem; //32/16
+$h3-font-size: 4rem;     //28/16
+$h4-font-size: 2rem;     //21/16
+$h5-font-size: 1.5rem;   //16/16
+$h6-font-size: 1.125rem; //12/16
+$p-font-size:  0.875rem; //14/16
+
+// 60px
+// 24px
+// 18px
+// 16px
+// 14px
+// 12px

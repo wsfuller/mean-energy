@@ -20,40 +20,38 @@ a{
 // SETTINGS
 // Global items such as colors, font sizes, etc.
 //__________________________________________________
-//@import "settings/border-radius";
-//@import "settings/breakpoints";
-//@import "settings/colors";
-//@import "settings/global";
-//@import "settings/typography";
-//@import "settings/animations";
+@import "settings/border-radius";
+@import "settings/breakpoints";
+@import "settings/colors";
+@import "settings/typography";
+@import "settings/animations";
 
 //
 // TOOLS
 // Sass mixins
 //__________________________________________________
-//@import "tools/media-queries";
+@import "tools/media-queries";
 
 //
 // GENERIC
 // CSS Normalic, box-sizing, etc.
 //__________________________________________________
-//@import "generic/box-sizing";
+
 
 //
 // ELEMENTS
 // Styles effecting tags only: <h#>, <p>, <body>, etc.
 //__________________________________________________
 @import "elements/page";
-//@import "elements/font-sizes";
-//@import "elements/links";
-//@import "elements/lists";
-//@import "elements/anchors";
+@import "elements/font-sizes";
+@import "elements/links";
+@import "elements/lists";
 
 //
 // OBJECTS
 // Styles for Classes and IDs
 //__________________________________________________
-//@import "objects/text";
+@import "objects/text";
 @import "objects/containers";
 //@import "objects/buttons";
 @import "objects/images";
@@ -61,7 +59,6 @@ a{
 //@import "objects/animations";
 //@import "objects/dressings";
 //@import "objects/visibility";
-//@import "objects/typography";
 //@import "objects/dropdowns";
 //@import "objects/forms";
 

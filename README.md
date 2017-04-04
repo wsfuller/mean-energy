@@ -5,7 +5,7 @@ This application is for educational purposes only.
 
 ### About
 
-MEAN Energy is an application dedicated to providing public gathered information on various drink brands and the brands available products. The application is built on Mongo Express Angular and Node, and designed using Sketch, InVision, and old fashioned pencil and paper. Designed by [Reynier Vorobey](https://www.instagram.com/vorobey12/?hl=en) and developed by [Stephen Fuller](http://williamsfuller.com/) 
+MEAN Energy is an application dedicated to providing public gathered information on various drink brands and the brands available products. The application is built on Mongo Express Angular and Node, and designed using Sketch, InVision, and old fashioned pencil and paper. Designed by [Reynier Vorobey](https://www.instagram.com/vorobey12/?hl=en) and developed by [Stephen Fuller](http://williamsfuller.com/)
 
 
 ### Technology:
@@ -87,15 +87,9 @@ MEAN Energy is an application dedicated to providing public gathered information
   * Amp Energy Juice - Orange
   * Amp Energy Juice - Mixed Berry
 * Full Throttle
-  * Sugar-Free Full Throttle
-  * Full-Throttle Fury
-  * Sugar-Free Full Throttle Fury
-  * Full Throttle Blue Demon
-  * Full Throttle Frozen Fury
-  * Full Throttle Mother
-  * Full Throttle Coffee Caramel
-  * Full Throttle Coffee Vanilla
-  * Full Throttle Coffee Mocha
+  * Citrus
+  * Orange
+  * Blue Agave
 * Xyience
   * Cherry Lime
   * Mango Guava

@@ -1,0 +1,48 @@
+//
+// SETTINGS - COLOR
+//__________________________________________________
+
+// VENDOR COLORS
+$monster-green: #92e601;
+$rockstar-yellow: #fff200;
+$redBull-blue: #121f45;
+$redBull-red: #cb2026;
+$nos-blue: #0079c1;
+$amp-green: #b4de22;
+$fullThrottle-yellow: #de9d00;
+$fullThrottle-blue: #0055c7;
+$fullThrottle-orange: #e64a00;
+$venom-red: #6a0502;
+
+
+$primary-color:       #35b3b3 !default;
+$primary-color-dark:  darken($primary-color, 5) !default;
+$primary-color-light: lighten($primary-color, 5) !default;
+
+$blue:    #0074D9 !default;
+$green:   #2ECC40 !default;
+$yellow:  #FFDC00 !default;
+$red:     #FF4136 !default;
+
+$white:       #fff !default;
+$silver:      #ddd !default;
+$gray:        #5b5b5b !default;
+$light-gray:  #f1f1f1 !default;
+$black:       #000 !default;
+$charcoal:    #212121 !default;
+$orange:      #af5500 !default;
+$drk-orange:  #4d2500 !default;
+
+$background-color-base:   #f2f3f7;
+$background-color-light:  $white;
+$background-color-dark:   $charcoal;
+
+$border-color-base:   $silver;
+$border-color-light:  $white;
+$border-color-dark:   $gray;
+
+$font-color-base:   $gray;
+$font-color-dark:   $charcoal;
+$font-color-light:  $white;
+
+$shadow-color: #1e1d22 !default;

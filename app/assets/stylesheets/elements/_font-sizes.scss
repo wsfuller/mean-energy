@@ -1,0 +1,58 @@
+//
+// ELEMENTS - FONT-SIZES
+//__________________________________________________
+h1 {
+  font-size: 32px;
+  @include break-sm{
+    font-size: 60px;
+  }
+
+}
+h2 {
+  font-size: 1.75rem;
+  @include break-sm{
+    font-size: 2rem;
+  }
+  @include break-md{
+    font-size: 2.5rem;
+  }
+  @include break-lg{
+    font-size: 3rem;
+  }
+}
+h3 {
+  font-size: 1.5rem;
+  @include break-sm{
+    font-size: 21px;
+  }
+  @include break-lg{
+    font-size: 32px;
+  }
+}
+
+h4{
+  font-size: 1.25rem;
+  @include break-sm{
+    font-size: 18px;
+  }
+  @include break-lg{
+    font-size: 26px;
+  }
+}
+
+h5{
+  @include break-md{
+    font-size: 21px;
+  }
+}
+h6{
+  @include break-md{
+    font-size: 18px;
+  }
+}
+p{
+  font-size: 12px;
+  @include break-md{
+    font-size: 16px;
+  }
+}
