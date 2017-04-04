@@ -7,6 +7,20 @@ This application is for educational purposes only.
 
 MEAN Energy is an application dedicated to providing public gathered information on various drink brands and the brands available products. The application is built on Mongo Express Angular and Node, and designed using Sketch, InVision, and old fashioned pencil and paper. Designed by [Reynier Vorobey](https://www.instagram.com/vorobey12/?hl=en) and developed by [Stephen Fuller](http://williamsfuller.com/)
 
+### Routes
+
+**Drinks**
+
+**Users**
+
+* GET     `/api/v1/users`
+* GET     `/api/v1/users/:id`
+* PUT     `/api/v1/users/:id`
+* DELETE  `/api/v1/users/:id`
+* POST    `/api/v1/users/register`
+* POST    `/api/v1/users/authenticate`
+* SECURED `/api/v1/users/dashboard`
+
 
 ### Technology:
 
