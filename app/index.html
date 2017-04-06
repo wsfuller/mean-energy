@@ -1,5 +1,5 @@
  <!DOCTYPE html>
- <html lang="en">
+ <html lang="en" ng-app="meanEnergy">
 
 <head>
   <!-- <meta charset="UTF-8"> -->
@@ -11,12 +11,14 @@
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-<body>
+<body ng-controller="ApplicationController">
 
   <header>
     <img class="logo" src="http://placehold.it/40x40" alt="logo" />
     <span>MEAN Energy</span>
   </header>
+
+  <div ui-view autoscroll="'true'"></div>
 
 
 
