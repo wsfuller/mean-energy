@@ -37,13 +37,13 @@ gulp.task('clean', function(){
 
 gulp.task('vendor-scripts', function(){
     return gulp.src([
-    'bower_components/angular/angular.min.js',
-    'bower_components/angular-animate/angular-animate.min.js',
-    'bower_components/angular-aria/angular-aria.min.js',
-    'bower_components/angular-messages/angular-messages.min.js',
-    'bower_components/angular-material/angular-material.min.js',
-    'bower_components/angular-ui-router/release/angular-ui-router.min.js',
-    'bower_components/angular-retina/build/angular-retina.min.js',
+    'node_modules/angular/angular.min.js',
+    'node_modules/angular-animate/angular-animate.min.js',
+    'node_modules/angular-aria/angular-aria.min.js',
+    'node_modules/angular-messages/angular-messages.min.js',
+    'node_modules/angular-material/angular-material.min.js',
+    'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+    'node_modules/angular-retina/build/angular-retina.min.js',
   ])
     .pipe(concat('vendor-scripts.min.js'))
     .pipe(gulp.dest('dist/assets/javascripts/'));
