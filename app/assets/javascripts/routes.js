@@ -10,4 +10,29 @@ angular.module('meanEnergy').config(function(
       url: '/',
       templateUrl: './views/home.html',
     })
+    .state('login',{
+      url: '/login',
+      templateUrl: './views/login.html'
+    })
+    .state('admin-dashboard',{
+      url: '/dashboard',
+      templateUrl: './views/admin-dashboard.html'
+    })
+    .state('drinks', {
+      url: '/drinks',
+      templateUrl: './views/drinks.html'
+    })
+    .state('drinks-profile',{
+      url: '/drinks/:id',
+      templateUrl: './views/drinks-profile.html'
+    })
+    .state('companies', {
+      url: '/companies',
+      templateUrl: './views/companies.html'
+    })
+    .state('companies-profile',{
+      url: '/companies/:id',
+      templateUrl: './views/companies-profile.html'
+    })
+
 });
