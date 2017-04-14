@@ -12,7 +12,8 @@ angular.module('meanEnergy').config(function(
     })
     .state('login',{
       url: '/login',
-      templateUrl: './views/login.html'
+      templateUrl: './views/login.html',
+      controller: "LoginController"
     })
     .state('admin-dashboard',{
       url: '/dashboard',

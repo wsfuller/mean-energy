@@ -9,6 +9,11 @@ MEAN Energy is an application dedicated to providing public gathered information
 
 ### Routes
 
+Test User:
+
+    "email": "bat@man.com",
+    "password": "12345"
+
 **Drinks**
 
 **Users**

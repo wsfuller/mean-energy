@@ -1,1 +1,37 @@
-<h1>LOGIN PAGE</h1>
+<form name="login" ng-submit="submitLogin()" layout="column" novalidate>
+  <md-input-container>
+    <label>Email</label>
+    <input
+      type="email"
+      name="email"
+      ng-class="{ 'has-error' : login.email.$invalid && !login.email.$pristine }"
+      ng-model="user.email"
+      required
+    >
+    <p ng-show="login.email.$invalid && login.email.$touched">
+      Enter valid e-mail
+    </p>
+  </md-input-container>
+  <md-input-container>
+    <label>Password</label>
+    <input
+      type="password"
+      name="password"
+      ng-model="user.password"
+      ng-class="{ 'has-error' : login.email.$invalid && login.email.$touched }"
+      ng-minlength="5"
+      required
+    >
+    <p ng-show="login.password.$error.minlength && login.password.$touched">
+      Password should be at least 5 characters
+    </p>
+  </md-input-container>
+
+  <md-button
+    type="submit"
+    class="md-raised md-primary"
+    ng-disabled="login.$invalid"
+    >
+    Login
+  </md-button>
+</form>
