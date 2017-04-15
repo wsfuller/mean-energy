@@ -1,7 +1,9 @@
 angular.module("meanEnergy",[
     'ngMaterial',
     'ui.router',
-    'ngRetina'
+    'ngRetina',
+    'ngAnimate',
+    'toastr',
 ]).config(function($mdThemingProvider){
   $mdThemingProvider.theme('default')
     .primaryPalette('purple',{

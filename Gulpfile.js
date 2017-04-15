@@ -44,6 +44,7 @@ gulp.task('vendor-scripts', function(){
     'node_modules/angular-material/angular-material.min.js',
     'node_modules/angular-ui-router/release/angular-ui-router.min.js',
     'node_modules/angular-retina/build/angular-retina.min.js',
+    'node_modules/angular-toastr/dist/angular-toastr.tpls.min.js'
   ])
     .pipe(concat('vendor-scripts.min.js'))
     .pipe(gulp.dest('dist/assets/javascripts/'));
