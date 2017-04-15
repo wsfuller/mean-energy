@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "server.js"
   },
   "keywords": [
     "mongo",
@@ -32,12 +32,14 @@
   },
   "dependencies": {
     "angular": "^1.6.1",
-    "angular-material": "^1.1.1",
-    "angular-ui-router": "^0.4.2",
-    "angular-retina": "^0.4.0",
     "angular-animate": "^1.6.1",
     "angular-aria": "^1.6.1",
+    "angular-jwt": "^0.1.9",
+    "angular-material": "^1.1.1",
     "angular-messages": "^1.6.1",
+    "angular-retina": "^0.4.0",
+    "angular-toastr": "^2.1.1",
+    "angular-ui-router": "^0.4.2",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.0",
     "express": "^4.15.0",
