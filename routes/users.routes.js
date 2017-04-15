@@ -11,42 +11,47 @@ router.use(function(req, res, next){
   next();
 });
 
-// router.route('/dashboard')
-//   .get(function(req, res){
-//       res.json({message: 'User Deleted'});
-//   });
 //
-// SECURED ROUTES (/api/v1/users/dashboard)
+// SECURED ROUTES
+//  "/api/v1/users"
 //__________________________________________________
+// Fetch ALL Users
+router.get('/', passport.authenticate('jwt', { session: false }), function(req, res){
+  User.find(function(err, users){
+    if(err){
+      res.send(err);
+    }
+    res.json(users);
+  });
+});
+// Fetch SINGLE User
+router.get('/:user_id', passport.authenticate('jwt', {session: false }), function(req, res){
+  User.findById(req.params.user_id, function(err, user){
+    if(err){
+      res.send(err);
+    }
+    res.json(user);
+  });
+});
+
+// User Dashboard
 router.get('/dashboard', passport.authenticate('jwt', { session: false }), function(req, res) {
   res.send('It worked! User id is: ' + req.user._id + '.');
 });
 
 
-//
-//  /api/v1/users
-//
-router.route('/')
-  // Fetch ALL Users
-  .get(function(req, res){
-    User.find(function(err, users){
-      if(err){
-        res.send(err);
-      }
-      res.json(users);
-    });
-  });
+
 
 router.route('/:user_id')
-  // Fetch SINGLE User
-  .get(function(req, res){
-    User.findById(req.params.user_id, function(err, user){
-      if(err){
-        res.send(err);
-      }
-      res.json(user);
-    });
-  })
+
+  // .get(function(req, res){
+  //   User.findById(req.params.user_id, function(err, user){
+  //     if(err){
+  //       res.send(err);
+  //     }
+  //     res.json(user);
+  //   });
+  // })
   // Update User
   .put(function(req, res){
     console.log(req.body);
