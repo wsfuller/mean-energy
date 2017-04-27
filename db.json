@@ -1,0 +1,28 @@
+{
+  "drinks":[
+    {
+      "id": 1,
+      "company": "id for monster",
+      "name":"monster energy",
+      "url": "https://www.monsterenergy.com/us/en/products/monster-energy",
+      "description": "Tear into a can of the meanest energy drink on the planet, Monster Energy. It`s the ideal combo of the right ingredients in the right proportion to deliver the big bad buzz that only Monster can. Monster packs a powerful punch but has a smooth easy drinking flavor. Athletes, musicians, anarchists, co-ed’s, road warriors, metal heads, geeks, hipsters, and bikers dig it- you will too.",
+      "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/bcb6f88a32b129ab21b45947476a62a8.png?mod=2017-01-11%2018:46:04",
+      "serving_size": "240g",
+      "calories": 101,
+      "total_fat": "0g",
+      "sodium": "180mg",
+      "potassium": "7mg",
+      "total_carbs": "27g",
+      "surgar": "27g",
+      "protein": "0g",
+      "riboflavin": "",
+      "niacin": "",
+      "b6": "100%",
+      "b12": "",
+      "caffine":"",
+      "taurine":"",
+      "ginsing":"",
+      "ingredients": "carbonated water, sugar, glucose, citric acid, natural flavors, taurine, sodium citrate, color added panax ginseng extract, l-carnitine, l-tartrate, caffeine, sorbic acid (preservative), benzoic acid (preservatives), niacinamide (vit b3), sucralose, salt, d-glucuronolactone, inositol guarana extract, pyridoxine hydrochloride (vit b6), riboflavin (vit b2), maltodextrin, cyanocobalamin (vit b12)."
+    }
+  ]
+}
