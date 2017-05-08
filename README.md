@@ -41,7 +41,7 @@ Test User:
 
 * Monster Energy
   * Regular
-  * Lo-Car
+  * Lo-Carb
   * Cuba Lima
   * Absolutely Zero
   * Ubermonster

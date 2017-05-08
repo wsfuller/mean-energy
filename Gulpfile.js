@@ -26,6 +26,8 @@ var autoprefixerOptions = {
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
+    fallback: 'dist/index.html',
+    port: 8080,
     livereload: true
   });
 });
