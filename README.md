@@ -72,7 +72,7 @@ Test User:
   * Relax - Caffeine Free Tropical Guava
 * Red Bull
    * Original
-   * Sugarfree
+   * Sugar Free
    * Total Zero
    * Red Edition
    * Blue Edition
