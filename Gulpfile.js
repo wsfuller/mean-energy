@@ -26,15 +26,20 @@ var autoprefixerOptions = {
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
-    fallback: 'dist/index.html',
-    port: 8080,
     livereload: true
   });
 });
 
 gulp.task('clean', function(){
-  return gulp.src('dist/**/*')
+  return gulp.src('dist')
       .pipe(clean());
+});
+
+gulp.task('vendor-fonts', function(){
+  return gulp.src([
+    'node_modules/material-design-iconic-font/dist/fonts/*'
+  ])
+    .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
 gulp.task('vendor-scripts', function(){
@@ -102,7 +107,7 @@ gulp.task('watch',function(){
 
 gulp.task('default', function(){
   gulp.start(
-    //'vendor-fonts',
+    'vendor-fonts',
     'vendor-scripts',
     'scripts',
     'html',
