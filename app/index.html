@@ -2,7 +2,11 @@
  <html lang="en" ng-app="meanEnergy">
 
 <head>
-  <!-- <meta charset="UTF-8"> -->
+  <meta charset="utf-8">
+  <meta http-equiv="cache-control" content="max-age=259200" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>MEAN Energy</title>
   <meta name="description" content="MEAN Energy, providing you with nutitiral information for your favorite drinks" />
   <link rel="stylesheet" href="assets/stylesheets/vendor-styles.css" />
@@ -15,34 +19,50 @@
   <md-content class="site-container">
     <header>
       <md-toolbar class="md-hue-2">
-        <div class="md-toolbar-tools">
-          <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
-            <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+        <div class="md-toolbar-tools" layout="row" layout-align="center center">
+          <div ng-controller="SiteSideNavController">
+            <md-button class="md-icon-button main-menu-button" aria-label="Main Menu" ng-click="toggleSideNav()">
+              <i class="zmdi zmdi-menu zmdi-hc-2x"></i>
+            </md-button>
+          </div>
+          <h2 class="text-center" flex>MEAN Energy</h2>
+          <md-button class="md-icon-button" aria-label="More">
+            <i class="zmdi zmdi-more-vert zmdi-hc-2x"></i>
           </md-button>
         </div>
       </md-toolbar>
-
-
-
-
-
-
-      <img class="logo" src="http://placehold.it/40x40" alt="logo" />
-      <span>MEAN Energy</span>
     </header>
-
-    <a ui-sref="home">Home</a>
-    <a ui-sref="login">Login</a>
-    <a ui-sref="admin-dashboard">Admin Dashboard</a>
-    <a ui-sref="drinks">Drinks</a>
-    <a ui-sref="drinks-profile">Drinks Profile</a>
-    <a ui-sref="companies">Companies</a>
-    <a ui-sref="companies-profile">Companies Profile</a>
-
-
+    <!-- SIDE NAV -->
+    <div ng-controller="SiteSideNavController">
+     <md-sidenav class="md-sidenav-left md-whiteframe-4dp" md-component-id="site_sidenav">
+       <md-content flex role="navigation">
+         <div class="sidenav-logo">
+           <img class="image-responsive" ng-src="http://placehold.it/125.125" alt="Logo"/>
+         </div>
+         <ul class="sidenav-navigation">
+           <li>
+             <md-button class="md-ink-ripple" ui-sref="home" ng-click="closeSideNav()">Home</md-button>
+           </li>
+           <li>
+             <md-button class="md-ink-ripple" ui-sref="login" ng-click="closeSideNav()">Login</md-button>
+           </li>
+           <li>
+             <md-button class="md-ink-ripple" ui-sref="admin-dashboard" ng-click="closeSideNav()">Admin Dashboard</md-button>
+           </li>
+           <li>
+             <md-button class="md-ink-ripple" ui-sref="drinks" ng-click="closeSideNav()">Drinks</md-button>
+           </li>
+           <li>
+             <md-button class="md-ink-ripple" ui-sref="companies" ng-click="closeSideNav()">Companies</md-button>
+           </li>
+         </ul>
+         <div class="sidenav-version">Site Version: 1.0.0 <a href="https://github.com/wsfuller/mean-energy"><i class="zmdi zmdi-github"></i></a></div>
+       </md-content>
+     </md-sidenav>
+    </div> <!-- // side nav -->
     <div ui-view autoscroll="'true'"></div>
-
   </md-content>
+
 
 
 
