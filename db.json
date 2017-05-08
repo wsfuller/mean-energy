@@ -24,5 +24,51 @@
       "ginsing":"",
       "ingredients": "carbonated water, sugar, glucose, citric acid, natural flavors, taurine, sodium citrate, color added panax ginseng extract, l-carnitine, l-tartrate, caffeine, sorbic acid (preservative), benzoic acid (preservatives), niacinamide (vit b3), sucralose, salt, d-glucuronolactone, inositol guarana extract, pyridoxine hydrochloride (vit b6), riboflavin (vit b2), maltodextrin, cyanocobalamin (vit b12)."
     }
+  ],
+  "companies":[
+    {
+      "id": "c1",
+      "name": "Monster Energy",
+      "categories":[
+        {
+          "category":{
+            "id": "cat1",
+            "name": "Regular"
+          },
+          "category":{
+            "id": "cat2",
+            "name": "Lo-Carb"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Rockstar",
+      "categories":[
+        {
+          "id": "cat3",
+          "name": "Original"
+        },
+        {
+          "id": "cat4",
+          "name": "Sugar Free"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "name": "Red Bull",
+      "categories":[
+        {
+          "id": "cat5",
+          "name": "Original"
+        },
+        {
+          "id": "cat6",
+          "name": "Sugar Free"
+        }
+      ]
+    }
   ]
 }

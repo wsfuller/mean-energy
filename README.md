@@ -41,7 +41,7 @@ Test User:
 
 * Monster Energy
   * Regular
-  * Lo-Car
+  * Lo-Carb
   * Cuba Lima
   * Absolutely Zero
   * Ubermonster
@@ -72,7 +72,7 @@ Test User:
   * Relax - Caffeine Free Tropical Guava
 * Red Bull
    * Original
-   * Sugarfree
+   * Sugar Free
    * Total Zero
    * Red Edition
    * Blue Edition
