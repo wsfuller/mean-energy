@@ -1,0 +1,37 @@
+//
+// COMPONENTS - SIDE-NAV
+//__________________________________________________
+
+md-sidenav{
+  // TODO: revisit this issue
+  position: fixed;
+  //width: 200px !important;
+  //max-width: 200px !important;
+  //min-width: 100px !important;
+  .sidenav-logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .sidenav-navigation{
+    li{
+      a{
+        width: 100%;
+        margin: .5rem auto;
+        padding: .5rem 1rem;
+        text-align: left;
+      }
+    }
+  }
+  .sidenav-version{
+    font-size: .8rem;
+    text-align: center;
+    a{
+      position: relative;
+      top: 3px;
+      margin-left: .5rem;
+      color: $font-color-light;
+      font-size: 1.5rem;
+    }
+  }
+}
