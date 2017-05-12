@@ -29,6 +29,8 @@
     {
       "id": "c1",
       "name": "Monster Energy",
+      "logo": "",
+      "slogan": "Unleash the Beast",
       "categories":[
         {
           "category":{

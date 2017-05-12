@@ -8,7 +8,8 @@ angular.module('meanEnergy').config(function(
 
     $stateProvider.state('home',{
       url: '/',
-      templateUrl: './views/home.html',
+      templateUrl: './views/companies.html',
+      controller: "CompaniesController"
     })
     .state('login',{
       url: '/login',
