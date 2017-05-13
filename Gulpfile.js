@@ -23,6 +23,11 @@ var autoprefixerOptions = {
   browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
 };
 
+gulp.task('clean', function(){
+  return gulp.src('dist')
+      .pipe(clean());
+});
+
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
@@ -30,31 +35,26 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('clean', function(){
-  return gulp.src('dist')
-      .pipe(clean());
+gulp.task('fonts', function(){
+  return gulp.src(['app/assets/fonts/**/*{.eot,.svg,.ttf,.woff,.woff2}'])
+  .pipe(gulp.dest('dist/assets/fonts'))
+  .pipe(livereload());
 });
 
-gulp.task('vendor-fonts', function(){
-  return gulp.src([
-    'node_modules/material-design-iconic-font/dist/fonts/*'
-  ])
-    .pipe(gulp.dest('dist/assets/fonts/'));
+gulp.task('html', function() {
+  return gulp.src(['app/**/*.html'])
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest('dist/'))
+    .pipe(livereload());
 });
 
-gulp.task('vendor-scripts', function(){
-    return gulp.src([
-    'node_modules/angular/angular.min.js',
-    'node_modules/angular-animate/angular-animate.min.js',
-    'node_modules/angular-aria/angular-aria.min.js',
-    'node_modules/angular-messages/angular-messages.min.js',
-    'node_modules/angular-material/angular-material.min.js',
-    'node_modules/angular-ui-router/release/angular-ui-router.min.js',
-    'node_modules/angular-retina/build/angular-retina.min.js',
-    'node_modules/angular-toastr/dist/angular-toastr.tpls.min.js'
-  ])
-    .pipe(concat('vendor-scripts.min.js'))
-    .pipe(gulp.dest('dist/assets/javascripts/'));
+gulp.task('images', function(){
+  return gulp.src(['app/assets/images/**/*', '!app/assets/images/**/original/*'])
+    .pipe(gulp.dest('dist/assets/images'))
+    .pipe(livereload());
 });
 
 gulp.task('scripts', function(){
@@ -81,20 +81,26 @@ gulp.task('styles', function(){
     .pipe(livereload());
 });
 
-gulp.task('html', function() {
-  return gulp.src(['app/**/*.html'])
-    .pipe(htmlmin({
-      collapseWhitespace: true,
-      removeComments: true
-    }))
-    .pipe(gulp.dest('dist/'))
-    .pipe(livereload());
+gulp.task('vendor-fonts', function(){
+  return gulp.src([
+    'node_modules/material-design-iconic-font/dist/fonts/*'
+  ])
+    .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
-gulp.task('fonts', function(){
-  return gulp.src(['app/assets/fonts/**/*{.eot,.svg,.ttf,.woff,.woff2}'])
-  .pipe(gulp.dest('dist/assets/fonts'))
-  .pipe(livereload());
+gulp.task('vendor-scripts', function(){
+    return gulp.src([
+    'node_modules/angular/angular.min.js',
+    'node_modules/angular-animate/angular-animate.min.js',
+    'node_modules/angular-aria/angular-aria.min.js',
+    'node_modules/angular-messages/angular-messages.min.js',
+    'node_modules/angular-material/angular-material.min.js',
+    'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+    'node_modules/angular-retina/build/angular-retina.min.js',
+    'node_modules/angular-toastr/dist/angular-toastr.tpls.min.js'
+  ])
+    .pipe(concat('vendor-scripts.min.js'))
+    .pipe(gulp.dest('dist/assets/javascripts/'));
 });
 
 gulp.task('watch',function(){
@@ -112,7 +118,7 @@ gulp.task('default', function(){
     'scripts',
     'html',
     'styles',
-    //'images',
+    'images',
     'fonts',
     'connect',
     'watch'

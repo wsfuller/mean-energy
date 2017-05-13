@@ -29,7 +29,7 @@
     {
       "id": "c1",
       "name": "Monster Energy",
-      "logo": "",
+      "logo": "/assets/images/companies/monster/logo.svg",
       "slogan": "Unleash the Beast",
       "categories":[
         {
@@ -47,6 +47,7 @@
     {
       "id": "c2",
       "name": "Rockstar",
+      "logo": "/assets/images/companies/rockstar/logo.svg",
       "categories":[
         {
           "id": "cat3",
@@ -61,6 +62,7 @@
     {
       "id": "c3",
       "name": "Red Bull",
+      "logo": "/assets/images/companies/red-bull/logo.svg",
       "categories":[
         {
           "id": "cat5",
