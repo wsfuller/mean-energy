@@ -30,7 +30,7 @@ angular.module('meanEnergy').config(function(
     })
     .state('company-profile',{
       url: '/companies/:id',
-      templateUrl: './views/companies-profile.html',
+      templateUrl: './views/company-profile.html',
       controller: "CompaniesController"
     })
     .state('about', {

@@ -4,21 +4,25 @@ angular.module('meanEnergy').controller('CompaniesController',[
   'CompanyFactory',
   function($scope, $stateParams, CompanyFactory){
 
-    console.log('location', $stateParams);
+    var companyId = $stateParams.id;
+    //console.log('location', $stateParams);
 
     $scope.getCompanies = function(){
-      console.log('get companies');
-     Company.getCompanies()
-       .then(function (response) {
-           $scope.companies = response.data;
-       }, function (error) {
-           $scope.status = 'Unable to load customer data: ' + error.message;
-       });
+      CompanyFactory.getCompanies()
+        .then(function (response) {
+          $scope.companies = response.data;
+        }, function (error) {
+          console.log('Get Companies Error:', error);
+        });
     };
 
     $scope.getCompanyDetails = function(){
-
-      console.log('get company details');
+      CompanyFactory.getCompany(companyId)
+        .then(function (response){
+          $scope.company = response.data;
+          console.log('Company Details', $scope.company);
+        }, function (error){
+          console.log('Get Company Error:', error);
+        });
     };
-
   }]);
