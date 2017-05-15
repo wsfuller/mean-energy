@@ -29,7 +29,10 @@
     {
       "id": "c1",
       "name": "Monster Energy",
-      "logo": "/assets/images/companies/monster/logo.svg",
+      "logo":{
+        "square": "/assets/images/companies/monster/logo.svg",
+        "rectangle": ""
+      },
       "slogan": "Unleash the Beast",
       "categories":[
         {
@@ -47,7 +50,11 @@
     {
       "id": "c2",
       "name": "Rockstar",
-      "logo": "/assets/images/companies/rockstar/logo.svg",
+      "logo": {
+        "square": "/assets/images/companies/rockstar/logo.svg",
+        "rectangle": ""
+      },
+      "slogan": "Pary like a Rockstar",
       "categories":[
         {
           "id": "cat3",
@@ -62,7 +69,11 @@
     {
       "id": "c3",
       "name": "Red Bull",
-      "logo": "/assets/images/companies/red-bull/logo.svg",
+      "slogan": "Red Bull gives you wings",
+      "logo":{
+        "square": "/assets/images/companies/red-bull/logo.svg",
+        "rectangle": ""
+      },
       "categories":[
         {
           "id": "cat5",
