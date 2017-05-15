@@ -1,9 +1,10 @@
 angular.module('meanEnergy').controller('CompaniesController',[
   '$scope',
-  'Company',
-  function($scope, Company){
+  '$stateParams',
+  'CompanyFactory',
+  function($scope, $stateParams, CompanyFactory){
 
-    //getCompanies();
+    console.log('location', $stateParams);
 
     $scope.getCompanies = function(){
       console.log('get companies');
@@ -13,11 +14,11 @@ angular.module('meanEnergy').controller('CompaniesController',[
        }, function (error) {
            $scope.status = 'Unable to load customer data: ' + error.message;
        });
-    }
+    };
 
     $scope.getCompanyDetails = function(){
 
       console.log('get company details');
-    }
+    };
 
   }]);

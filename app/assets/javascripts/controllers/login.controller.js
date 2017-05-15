@@ -4,8 +4,8 @@ angular.module('meanEnergy').controller('LoginController',[
   'toastr',
   function($scope, Login, toastr){
     $scope.submitLogin = function(user){
-      var user = $scope.user
+      user = $scope.user;
       console.log('login requested', user);
       Login.login(user);
-    }
+    };
   }]);

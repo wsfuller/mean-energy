@@ -29,13 +29,13 @@ angular.module('meanEnergy').config(function(
       templateUrl: './views/drinks-profile.html'
     })
     .state('company-profile',{
-      url: '/companies/:profile',
+      url: '/companies/:id',
       templateUrl: './views/companies-profile.html',
       controller: "CompaniesController"
     })
     .state('about', {
       url: '/about-project',
       templateUrl: './views/about.html'
-    })
+    });
 
 });
