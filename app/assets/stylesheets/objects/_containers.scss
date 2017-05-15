@@ -6,9 +6,12 @@
 }
 .container{
   width: 100%;
-  max-width: 1920px;
   height: auto;
+  display: flex;
   position: relative;
-  display: inline-block;
   margin: auto;
+  padding: 0 .5rem;
+  @include break-lg{
+    max-width: 1920px;
+  }
 }
