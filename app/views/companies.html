@@ -10,13 +10,12 @@
             </md-card-title-text>
             <md-card-title-media>
               <div class="md-media-sm card-media">
-                <img class="image-responsive" ng-src="{{company.logo}}" alt="{{company.name}}" />
+                <img class="image-responsive" ng-src="{{company.logo.square}}" alt="{{company.name}}" />
               </div>
             </md-card-title-media>
           </md-card-title>
           <md-card-actions layout="row" layout-align="end center">
-            <md-button>Categories</md-button>
-            <md-button>Drinks</md-button>
+            <md-button ui-sref="company-profile({profile: company.id})">View</md-button>
           </md-card-actions>
         </md-card>
       </md-grid-tile>
