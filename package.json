@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "jsonServer": "json-server --watch db.json --port 3004",
+    "jsonServer": "json-server --watch db.json --port 3004 --routes routes.json",
     "start": "server.js"
   },
   "keywords": [

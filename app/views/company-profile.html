@@ -1,0 +1,11 @@
+<div ng-init="getCompanyDetails()">
+  <h1>{{company.name}}</h1>
+  <div>
+    <h3>Drinks</h3>
+    <ul>
+      <li ng-repeat="drink in drinks">
+        {{drink.name}}
+      </li>
+    </ul>
+  </div>
+</div>

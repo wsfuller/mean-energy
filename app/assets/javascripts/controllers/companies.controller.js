@@ -1,23 +1,49 @@
 angular.module('meanEnergy').controller('CompaniesController',[
   '$scope',
-  'Company',
-  function($scope, Company){
+  '$stateParams',
+  'CompanyFactory',
+  function($scope, $stateParams, CompanyFactory){
 
-    //getCompanies();
+    var companyId = $stateParams.id;
+    //var drinkId = 1;
+    //console.log('location', $stateParams);
 
     $scope.getCompanies = function(){
-      console.log('get companies');
-     Company.getCompanies()
-       .then(function (response) {
-           $scope.companies = response.data;
-       }, function (error) {
-           $scope.status = 'Unable to load customer data: ' + error.message;
-       });
-    }
+      CompanyFactory.getCompanies()
+        .then(function (response) {
+          $scope.companies = response.data;
+        }, function (error) {
+          console.log('Get Companies Error:', error);
+        });
+    };
 
     $scope.getCompanyDetails = function(){
+      CompanyFactory.getCompany(companyId)
+        .then(function (response){
+          $scope.company = response.data;
+          console.log('Company Details', $scope.company);
+          var drinkIds = $scope.company.drinks;
+          CompanyFactory.getCompanyDrinks(drinkIds)
+            .then(function(response){
+              console.log('Company get drinks', response)
+              $scope.drinks = response.data;
+            }, function(error){
+              console.log('Get Company Drinks Error', error);
+            })
 
-      console.log('get company details');
+        }, function (error){
+          console.log('Get Company Error:', error);
+        });
+    };
+
+    $scope.getCompanyDrinks = function(){
+      console.log('get company drinks');
+      CompanyFactory.getCompanyDrinks()
+        .then(function (response){
+          $scope.drink = response.data;
+          console.log('Drink Details', $scope.drink);
+        }, function (error){
+          console.log('Ger Company Error:', error);
+        });
     }
-
   }]);

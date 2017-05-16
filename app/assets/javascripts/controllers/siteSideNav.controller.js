@@ -53,6 +53,6 @@ function(
   $scope.closeSideNav = function () {
     console.log('close the side nav');
     $mdSidenav('site_sidenav').close();
-  }
+  };
 
 }]);
