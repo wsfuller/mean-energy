@@ -3,10 +3,36 @@
     {
       "id": 1,
       "company": "c1",
-      "name":"monster energy",
+      "name":"Monster Energy",
+      "tagline": "Unleash the Beast",
       "url": "https://www.monsterenergy.com/us/en/products/monster-energy",
       "description": "Tear into a can of the meanest energy drink on the planet, Monster Energy. It`s the ideal combo of the right ingredients in the right proportion to deliver the big bad buzz that only Monster can. Monster packs a powerful punch but has a smooth easy drinking flavor. Athletes, musicians, anarchists, co-ed’s, road warriors, metal heads, geeks, hipsters, and bikers dig it- you will too.",
       "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/bcb6f88a32b129ab21b45947476a62a8.png?mod=2017-01-11%2018:46:04",
+      "serving_size": "240g",
+      "calories": 101,
+      "total_fat": "0g",
+      "sodium": "180mg",
+      "potassium": "7mg",
+      "total_carbs": "27g",
+      "surgar": "27g",
+      "protein": "0g",
+      "riboflavin": "",
+      "niacin": "",
+      "b6": "100%",
+      "b12": "",
+      "caffine":"",
+      "taurine":"",
+      "ginsing":"",
+      "ingredients": "carbonated water, sugar, glucose, citric acid, natural flavors, taurine, sodium citrate, color added panax ginseng extract, l-carnitine, l-tartrate, caffeine, sorbic acid (preservative), benzoic acid (preservatives), niacinamide (vit b3), sucralose, salt, d-glucuronolactone, inositol guarana extract, pyridoxine hydrochloride (vit b6), riboflavin (vit b2), maltodextrin, cyanocobalamin (vit b12)."
+    },
+    {
+      "id": 2,
+      "company": "c1",
+      "name":"Lo-Carb",
+      "tagline": "Unleash the Beast",
+      "url": "https://www.monsterenergy.com/products/monster-energy/lo-carb-3",
+      "description": "Tear into a can of the meanest energy drink on the planet, Lo-carb Monster Energy. Low calories, no compromise. That’s what Lo-carb Monster Energy is all about. Get the big bad Monster buzz you know and love, but with a fraction of the calories and carbohydrates. Athletes, musicians, anarchists, co-ed’s, road warriors, metal heads, geeks, hipsters, and bikers dig it- you will too. ",
+      "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/1c42c5818a4ac01d5dbb54ddf81e36f2.png?mod=e8dd95606c90dc93f84a015cf491ac48",
       "serving_size": "240g",
       "calories": 101,
       "total_fat": "0g",
@@ -45,7 +71,8 @@
             "name": "Lo-Carb"
           }
         }
-      ]
+      ],
+      "drinks":[1,2]
     },
     {
       "id": "c2",

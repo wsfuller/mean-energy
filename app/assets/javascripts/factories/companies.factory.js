@@ -13,6 +13,16 @@ angular.module('meanEnergy').factory('CompanyFactory', ['$http', function($http)
       return $http.get(API_URL + 'companies/' + companyId);
     };
 
+    Company.getCompanyDrinks = function(drinkIds, response){
+      console.log('factory drink id', drinkIds);
+      return $http(
+        {
+          method: 'GET',
+          url: API_URL + 'drinks/',
+          params: { "id[]": drinkIds }
+        })
+    };
+
 
     return Company;
 }]);
