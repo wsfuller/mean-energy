@@ -1,6 +1,9 @@
 //
 // ELEMENTS - PAGE
 //__________________________________________________
+*{
+  box-sizing: border-box;
+}
 
 html, body{
   align-items: stretch;
