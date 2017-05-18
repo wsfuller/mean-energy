@@ -23,14 +23,15 @@ angular.module('meanEnergy').controller('CompaniesController',[
           $scope.company = response.data;
           console.log('Company Details', $scope.company);
           var drinkIds = $scope.company.drinks;
-          CompanyFactory.getCompanyDrinks(drinkIds)
-            .then(function(response){
-              console.log('Company get drinks', response)
-              $scope.drinks = response.data;
-            }, function(error){
-              console.log('Get Company Drinks Error', error);
-            })
-
+          if(drinkIds){
+            CompanyFactory.getCompanyDrinks(drinkIds)
+              .then(function(response){
+                console.log('Company get drinks', response);
+                $scope.drinks = response.data;
+              }, function(error){
+                console.log('Get Company Drinks Error', error);
+              });
+          }
         }, function (error){
           console.log('Get Company Error:', error);
         });
