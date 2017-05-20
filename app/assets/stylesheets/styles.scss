@@ -66,8 +66,9 @@ a{
 // COMPONENTS
 // Recognizable pieces of UI: cards, headers, side panels, etc.
 //__________________________________________________
-@import "components/header";
-@import "components/_side-nav.scss";
+@import "components/_header";
+@import "components/_side-nav";
+@import "components/_heros";
 //@import "components/_server-alerts.scss";
 //@import "components/footer";
 //@import "components/modules";

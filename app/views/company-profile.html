@@ -1,15 +1,16 @@
 <div ng-init="getCompanyDetails()">
-  <section class="module">
-    <div class="container">
-      <div layout="column" layout-align="center center">
-        <div flex="100">
-          <h1>{{company.name}}</h1>
-        </div>
+  <section class="module hero hero-profile"
+    ng-style="{'background-image': 'url(' + company.images.background + ')'}">
+    <div class="hero-overlay">
+      <div class="container" layout="column" layout-align="center center" flex>
 
+          <h1 class="hero-title">{{company.name}}</h1>
+          <h3 class="hero-sub-title">
+            <i>"{{company.slogan}}"</i>
+          </h3>
 
       </div>
     </div>
-
   </section>
 
   <div>
