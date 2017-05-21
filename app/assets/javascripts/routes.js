@@ -26,7 +26,7 @@ angular.module('meanEnergy').config(function(
     })
     .state('drink-profile',{
       url: '/drinks/:id',
-      templateUrl: './views/drinks-profile.html'
+      templateUrl: './views/drink-profile.html'
     })
     .state('company-profile',{
       url: '/companies/:id',
