@@ -3,22 +3,36 @@
     ng-style="{'background-image': 'url(' + company.images.background + ')'}">
     <div class="hero-overlay">
       <div class="container" layout="column" layout-align="center center" flex>
-
-          <h1 class="hero-title">{{company.name}}</h1>
-          <h3 class="hero-sub-title">
-            <i>"{{company.slogan}}"</i>
-          </h3>
-
+        <h1 class="hero-title">{{company.name}}</h1>
+        <h3 class="hero-sub-title">
+          <i>"{{company.slogan}}"</i>
+        </h3>
       </div>
     </div>
   </section>
-
-  <div>
-    <h3>Drinks</h3>
-    <ul>
-      <li ng-repeat="drink in drinks">
-        {{drink.name}}
-      </li>
-    </ul>
-  </div>
+  <section class="module">
+    <div class="container">
+      <div class="row" layout="column" layout-align="center center">
+        <h2 class="section-title">Beverages</h2>
+      </div>
+    </div>
+    <div class="container" layout="row" layout-wrap layout-align="center center" flex>
+      <div ui-sref="drink-profile({id: drink.id})"
+          class="product-tile"
+          ng-repeat="drink in drinks"
+          layout="column"
+          layout-align="center center"
+          flex-xs="90"
+          flex-sm="33"
+          flex-md="25"
+          flex-gt-lg="20">
+        <img class="image-responsive" ng-src={{drink.image}} alt="{{drink.name}} can" />
+        <h4 class="product-tile-title">{{drink.name}}</h4>
+        <span class="product-tile-divider" ng-style="{'background-color': drink.primary_color}"></span>
+        <p class="product-tile-tagline">
+          <i>"{{drink.tagline}}"</i>
+        </p>
+      </div>
+    </div>
+  </section>
 </div>
