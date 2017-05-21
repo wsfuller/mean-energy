@@ -1,12 +1,3 @@
-a{
-  display: flex;
-}
-
-//body{
-//  background-color: black;
-//}
-
-
 //
 // STYLES
 //__________________________________________________
@@ -69,6 +60,7 @@ a{
 @import "components/_header";
 @import "components/_side-nav";
 @import "components/_heros";
+@import "components/_product-tiles";
 //@import "components/_server-alerts.scss";
 //@import "components/footer";
 //@import "components/modules";

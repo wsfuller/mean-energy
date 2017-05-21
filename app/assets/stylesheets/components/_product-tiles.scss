@@ -1,0 +1,42 @@
+//
+// COMPONENTS - PRODUCT-TILE
+//__________________________________________________
+.product-tile{
+  position: relative;
+  padding: 1.5rem 1rem 1rem;
+  transition: all $animation-timing-base ease-in-out;
+  &:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 5px rgba($shadow-color, .1);
+    z-index: 2;
+    transition: all $animation-timing-base ease-in-out;
+    img, .product-tile-title, .product-tile-divider, .product-tile-tagline{
+      transform: scale(1.1);
+    }
+  }
+  img{
+    max-height: 150px;
+    transition: all $animation-timing-base ease-in-out;
+    @include break-xs{
+      max-height: 200px;
+    }
+    @include break-md{
+      max-height: 250px;
+    }
+  }
+  .product-tile-title{
+    margin: 1rem auto 0;
+    text-align: center;
+    transition: all $animation-timing-base ease-in-out;
+  }
+  span.product-tile-divider{
+      width: 75px;
+      height: 3px;
+      margin: .25rem auto .5rem;
+      transition: all $animation-timing-base ease-in-out;
+  }
+  .product-tile-tagline{
+    margin: 0 auto .5rem;
+    transition: all $animation-timing-base ease-in-out;
+  }
+}
