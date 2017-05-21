@@ -8,6 +8,7 @@
       "url": "https://www.monsterenergy.com/us/en/products/monster-energy",
       "description": "Tear into a can of the meanest energy drink on the planet, Monster Energy. It`s the ideal combo of the right ingredients in the right proportion to deliver the big bad buzz that only Monster can. Monster packs a powerful punch but has a smooth easy drinking flavor. Athletes, musicians, anarchists, co-ed’s, road warriors, metal heads, geeks, hipsters, and bikers dig it- you will too.",
       "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/bcb6f88a32b129ab21b45947476a62a8.png?mod=2017-01-11%2018:46:04",
+      "primary_color": "#a3d543",
       "serving_size": "240g",
       "calories": 101,
       "total_fat": "0g",
@@ -33,6 +34,7 @@
       "url": "https://www.monsterenergy.com/products/monster-energy/lo-carb-3",
       "description": "Tear into a can of the meanest energy drink on the planet, Lo-carb Monster Energy. Low calories, no compromise. That’s what Lo-carb Monster Energy is all about. Get the big bad Monster buzz you know and love, but with a fraction of the calories and carbohydrates. Athletes, musicians, anarchists, co-ed’s, road warriors, metal heads, geeks, hipsters, and bikers dig it- you will too. ",
       "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/1c42c5818a4ac01d5dbb54ddf81e36f2.png?mod=e8dd95606c90dc93f84a015cf491ac48",
+      "primary_color": "#6dc1e8",
       "serving_size": "240g",
       "calories": 101,
       "total_fat": "0g",
@@ -57,23 +59,37 @@
       "tagline": "Party Like a Rockstar",
       "url": "https://www.monsterenergy.com/products/monster-energy/lo-carb-3",
       "description": "Tear into a can of the meanest energy drink on the planet, Lo-carb Monster Energy. Low calories, no compromise. That’s what Lo-carb Monster Energy is all about. Get the big bad Monster buzz you know and love, but with a fraction of the calories and carbohydrates. Athletes, musicians, anarchists, co-ed’s, road warriors, metal heads, geeks, hipsters, and bikers dig it- you will too. ",
-      "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/1c42c5818a4ac01d5dbb54ddf81e36f2.png?mod=e8dd95606c90dc93f84a015cf491ac48",
-      "serving_size": "240g",
-      "calories": 101,
-      "total_fat": "0g",
-      "sodium": "180mg",
-      "potassium": "7mg",
-      "total_carbs": "27g",
-      "surgar": "27g",
-      "protein": "0g",
-      "riboflavin": "",
-      "niacin": "",
-      "b6": "100%",
-      "b12": "",
-      "caffine":"",
-      "taurine":"",
-      "ginsing":"",
-      "ingredients": "carbonated water, sugar, glucose, citric acid, natural flavors, taurine, sodium citrate, color added panax ginseng extract, l-carnitine, l-tartrate, caffeine, sorbic acid (preservative), benzoic acid (preservatives), niacinamide (vit b3), sucralose, salt, d-glucuronolactone, inositol guarana extract, pyridoxine hydrochloride (vit b6), riboflavin (vit b2), maltodextrin, cyanocobalamin (vit b12)."
+      "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/1c42c5818a4ac01d5dbb54ddf81e36f2.png?mod=e8dd95606c90dc93f84a015cf491ac48"
+    },
+    {
+      "id": 4,
+      "company": "c1",
+      "name":"Assault",
+      "tagline": "Viva La Revolution",
+      "url": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/dcd00e03ea9eeaed09bc45f8803e3b2a.png?mod=4632cdfd47fccc75b9d53048eee296ac",
+      "description": "At Monster we don’t get too hung up on politics. We’re not for \"the War\", against \"the War\" or any war for that matter. We put the \"camo\" pattern on our new Monster Assault can because we think it looks cool. Plus it helps fire us up to fight the big multi-national companies who dominate the beverage business. We’ll leave politics to the politicians and just keep doing what we do best – make the meanest energy drinks on the planet! Declare war on the ordinary! Grab a Monster Assault and Viva La Revolution!",
+      "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/dcd00e03ea9eeaed09bc45f8803e3b2a.png?mod=4632cdfd47fccc75b9d53048eee296ac",
+      "primary_color": "#da3031"
+    },
+    {
+      "id": 5,
+      "company": "c1",
+      "name":"GRONK",
+      "tagline": "Get Your Gronk On",
+      "url": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/c5b713a5ef986c465d5cd3713f789a88.png?mod=e8dd95606c90dc93f84a015cf491ac48",
+      "description": "Rob Gronkowski he`s a Beast on the football field and a Party Animal in the offseason. In other words, he`s a Monster kind of guy. Who better to partner with on our latest all pro creation.. GRONK. We re-engineered the flavor and added our tried and true energy blend to deliver the big bad buzz only Monster can.",
+      "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/dcd00e03ea9eeaed09bc45f8803e3b2a.png?mod=4632cdfd47fccc75b9d53048eee296ac",
+      "primary_color": "#0b2870"
+    },
+    {
+      "id": 6,
+      "company": "c1",
+      "name":"Mean Bean",
+      "tagline": "Coffee + Energy",
+      "url": "https://s3.monsterenergy.com/media/uploads_image/2016/06/30/auto/800/b1de1877dd5f1a4b589bf83561740b5e.png?mod=d9ca74126efc9578159ae749c2d5633d",
+      "description": "Rob Gronkowski he`s a Beast on the football field and a Party Animal in the offseason. In other words, he`s a Monster kind of guy. Who better to partner with on our latest all pro creation.. GRONK. We re-engineered the flavor and added our tried and true energy blend to deliver the big bad buzz only Monster can.",
+      "image": "https://s3.monsterenergy.com/media/uploads_image/2016/06/29/auto/800/dcd00e03ea9eeaed09bc45f8803e3b2a.png?mod=4632cdfd47fccc75b9d53048eee296ac",
+      "primary_color": "#6c5521"
     }
   ],
   "companies":[
@@ -100,7 +116,7 @@
           }
         }
       ],
-      "drinks":[1,2]
+      "drinks":[1,2,4,5,6]
     },
     {
       "id": "c2",
