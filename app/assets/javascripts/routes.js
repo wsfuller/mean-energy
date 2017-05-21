@@ -24,7 +24,7 @@ angular.module('meanEnergy').config(function(
       url: '/drinks',
       templateUrl: './views/drinks.html'
     })
-    .state('drinks-profile',{
+    .state('drink-profile',{
       url: '/drinks/:id',
       templateUrl: './views/drinks-profile.html'
     })
