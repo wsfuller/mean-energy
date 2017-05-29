@@ -30,7 +30,7 @@ module.exports.getDrinkById = function(id, callback){
 }
 
 // Add Drink
-module.exports.addDrink = function(drink, callback){
+module.exports.createDrink = function(drink, callback){
   var add = {
     name: drink.name,
     tagline: drink.tagline

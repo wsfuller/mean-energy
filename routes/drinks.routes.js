@@ -29,7 +29,7 @@ router.route('/')
   // Add Drink
   .post(function(req, res){
     var drink = req.body;
-    Drink.addDrink(drink, function(err, drink){
+    Drink.createDrink(drink, function(err, drink){
       if(err){
         console.log('Error adding Drink', err);
         res.send(err);
