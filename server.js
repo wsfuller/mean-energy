@@ -10,6 +10,7 @@ mongoose.connect(config.database);
 
 var index = require('./routes/index');
 var users = require('./routes/users.routes');
+var drinks = require('./routes/drinks.routes');
 
 app.use(function(req,res,next){
   // Website you wish to allow to connect
@@ -35,6 +36,7 @@ var port = process.envPORT || 1337;
 
 app.use('/', index);
 app.use('/api/v1/users', users);
+app.use('/api/v1/drinks', drinks);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
