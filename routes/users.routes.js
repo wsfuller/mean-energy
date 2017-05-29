@@ -42,15 +42,6 @@ router.get('/dashboard', passport.authenticate('jwt', { session: false }), funct
 
 
 router.route('/:user_id')
-
-  // .get(function(req, res){
-  //   User.findById(req.params.user_id, function(err, user){
-  //     if(err){
-  //       res.send(err);
-  //     }
-  //     res.json(user);
-  //   });
-  // })
   // Update User
   .put(function(req, res){
     console.log(req.body);
@@ -84,6 +75,7 @@ router.route('/:user_id')
 //__________________________________________________
 router.route('/register')
   .post(function(req, res){
+    console.log('hitting register');
     if(!req.body.email || !req.body.password){
       res.json({success: false, message: 'Please enter email and password'});
     } else {
