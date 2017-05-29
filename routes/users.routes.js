@@ -7,7 +7,6 @@ var config = require('../config/main');
 var User = require('../models/users.model.js');
 
 router.use(function(req, res, next){
-  console.log('HITTING USERS ROUTES');
   next();
 });
 
