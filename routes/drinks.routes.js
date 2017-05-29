@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var jwt = require('jsonwebtoken');
+var multer  = require('multer');
 var passport = require('passport');
 var config = require('../config/main');
 
@@ -27,7 +28,7 @@ router.route('/')
     });
   })
   // Add Drink
-  .post(function(req, res){
+  .post(passport.authenticate('jwt', { session: false }),function(req, res){
     var drink = req.body;
     Drink.createDrink(drink, function(err, drink){
       if(err){
@@ -51,7 +52,7 @@ router.route('/:id')
     });
   })
   // Update Drink
-  .put(function(req, res){
+  .put(passport.authenticate('jwt', { session: false }), function(req, res){
     var id = req.params.id;
     var drink = req.body;
     Drink.updateDrink(id, drink, {}, function(err, drink){
@@ -59,11 +60,11 @@ router.route('/:id')
         console.log('Error updating Drink', err);
         res.send(err);
       }
-      res.json(drink);
+      res.json({"message": "Your Drink has been Updated Successfully"});
     });
   })
   // Delete Drink
-  .delete(function(req, res){
+  .delete(passport.authenticate('jwt', { session: false }),function(req, res){
     var id = req.params.id;
     Drink.deleteDrink(id, function(err, drink){
       if(err){
