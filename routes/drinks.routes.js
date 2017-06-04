@@ -4,6 +4,19 @@ var jwt = require('jsonwebtoken');
 var multer  = require('multer');
 var passport = require('passport');
 var config = require('../config/main');
+//var upload = multer({ dest: 'uploads/images' })
+var upload = multer({
+    dest: 'uploads/images',
+    fileFilter: function (req, file, callback) {
+      console.log('running upload file filter');
+        var fileType = file.mimetype;
+        if(fileType !== 'image/png' && fileType !== 'image/jpeg' && fileType !== 'image/gif' && fileType !== 'image/jpg') {
+            return callback(new Error('Only images are allowed'))
+        }
+        callback(null, true)
+    },
+}).single('image');
+
 
 var Drink = require('../models/drinks.model.js');
 
@@ -11,11 +24,26 @@ router.use(function(req, res, next){
   next();
 });
 
+checkImageType = function(image){
+  console.log('check image', image)
+  // Checking to see if an image has been uploaded
+  if(typeof image !== "undefined"){
+    console.log('check image type there was an image');
+    // Checking the mime type of the file uploaded must be JPEG or PNG only
+    if(image.mimetype !== "image/jpeg" && image.mimetype !== "image/png"){
+      //res.status(500).send();
+      image = {error: "Your image must be JPEG or PNG"};
+    }
+  } else {
+    // If there is no image uploaded set the drinkImage to a blank object so it does not error out in the drinks.model.js
+    image = image;
+  }
+  return image;
+}
+
 //
 // GET REQUESTS
 //__________________________________________________
-
-
 router.route('/')
   // Get ALL Drinks
   .get(function(req, res){
@@ -28,11 +56,14 @@ router.route('/')
     });
   })
   // Add Drink
-  .post(passport.authenticate('jwt', { session: false }),function(req, res){
+  .post(passport.authenticate('jwt', { session: false }), upload, function(req, res, next){
     var drink = req.body;
-    Drink.createDrink(drink, function(err, drink){
+    var drinkImage = req.file;
+    console.log('DRINK IMAGE', drinkImage);
+
+    Drink.createDrink(drink, drinkImage, function(err, drink, drinkImage){
+      console.log('creating drink');
       if(err){
-        console.log('Error adding Drink', err);
         res.send(err);
       }
       res.json(drink)
@@ -74,18 +105,5 @@ router.route('/:id')
       res.json(drink);
     });
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = router;

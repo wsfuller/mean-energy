@@ -10,6 +10,9 @@ var DrinkSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  image:{
+    type: String
+  },
   created_at:{
     type: Date,
     default: Date.now
@@ -30,11 +33,13 @@ module.exports.getDrinkById = function(id, callback){
 }
 
 // Add Drink
-module.exports.createDrink = function(drink, callback){
+module.exports.createDrink = function(drink, drinkImage, callback){
   var add = {
     name: drink.name,
-    tagline: drink.tagline
+    tagline: drink.tagline,
+    image: drinkImage.filename
   }
+
   Drink.create(add, callback);
 }
 
